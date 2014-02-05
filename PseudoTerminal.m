@@ -78,6 +78,7 @@
 #import "ColorsMenuItemView.h"
 #import "iTermFontPanel.h"
 #import "FutureMethods.h"
+#import "PSMTabBarControl.h"
 
 #define CACHED_WINDOW_POSITIONS 100
 
@@ -426,7 +427,7 @@ NSString *sessionsKey = @"sessions";
     [background_ release];
 
     NSRect aRect = [[[self window] contentView] bounds];
-    aRect.size.height = 22;
+    aRect.size.height = kPSMTabBarControlHeight;
     tabBarControl = [[PSMTabBarControl alloc] initWithFrame:aRect];
 
     [tabBarControl retain];

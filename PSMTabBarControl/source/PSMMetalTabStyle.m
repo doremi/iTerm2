@@ -299,7 +299,8 @@
     NSRange range = NSMakeRange(0, [contents length]);
 
     // Add font attribute
-    [attrStr addAttribute:NSFontAttributeName value:[NSFont boldSystemFontOfSize:11.0] range:range];
+    NSFont *font = [NSFont fontWithName:FONT_NAME size:FONT_SIZE];
+    [attrStr addAttribute:NSFontAttributeName value:font range:range];
     [attrStr addAttribute:NSForegroundColorAttributeName value:[[NSColor textColor] colorWithAlphaComponent:0.75] range:range];
 
     // Add shadow attribute

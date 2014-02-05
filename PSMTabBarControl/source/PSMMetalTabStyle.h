@@ -9,6 +9,9 @@
 #import <Cocoa/Cocoa.h>
 #import "PSMTabStyle.h"
 
+#define FONT_NAME @"Courier"
+#define FONT_SIZE 22
+
 @interface PSMMetalTabStyle : NSObject <PSMTabStyle> {
     NSImage *metalCloseButton;
     NSImage *metalCloseButtonDown;
